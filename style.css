@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2b2b2b;
+    --primary-color2: rgba(40, 40, 40, 0.5);
+    --secondary-color: rgb(185, 185, 185);
+    --hover-color-fonts: whitesmoke;
+    --hover-color-backgrounds: #626262;
+    --title-font: 25px;
+    --normal-font: 14px;
+    --main-font: 'Times New Roman', Times, serif;
+}
+
+header{
+    height: 15vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100px;
+
+    }
+}
+
+
+
+section{
+    background-image: url(./Images/pexels-content-pixie-1405717-2736499.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    #container-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transition: 0.5s;
+        color: var(--primary-color);
+    }
+
+    #greeting-msg{
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+        color: var(--primary-color);
+    }
+
+    #container-tasks{
+        display: flex;
+        transition: 0.5s;
+        opacity: 0;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        /* background-color: red; */
+        width: 60%;
+        height: 50%;
+        margin: 10px;
+        padding: 10px;
+        /* overflow-y: scroll; */
+        #btns-box{
+            /* background-color: aqua; */
+            height: 100px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            #actions{
+
+            }
+        }
+        #tasks-box{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-color2);
+            border-radius: 30px;
+            border: 3px solid white;
+            color: white;
+
+            .container-task{
+                width: 400px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .tasks-added{
+                    cursor: pointer;
+                    margin: 5px;
+                    &:hover + label{
+                        font-size: 18px;
+                    }
+                    &:checked + label{
+                        color: red;
+                    }
+                }
+                label{
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    
+    #up{
+        color: green;
+        &:hover{
+            background-color: green;
+            color: var(--secondary-color);
+        }
+    }
+    #down{
+        color: red;
+        &:hover{
+            background-color: red;
+            color: var(--secondary-color);
+        }
+    }
+
+    .reordering-btns{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        width: 40px;
+        height: 30px;
+        border-radius: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .btns{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-size: var(--normal-font);
+        font-family: var(--main-font);
+        padding: 5px;
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        &:hover{
+        background-color: var(--hover-color-backgrounds);
+        color: var(--hover-color-fonts);
+        cursor: pointer;
+        }
+    }
+
+
+
+
+    .inputs{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        padding: 5px;
+        text-align: center;
+        border-radius: 10px;
+        &:focus{
+            
+        background-color: var(--hover-color-backgrounds);
+        color: var(--hover-color-fonts);
+        }
+    }
+}
+
+footer{
+    height: 5vh;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

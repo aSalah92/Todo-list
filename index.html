@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="./Images/unnamed.png" alt="">
+    </header>
+    <section>
+
+        <!-- first form for name -->
+    <form action="#" id="container-name">
+            <label for="name" id="name-label">Enter your username</label>
+            <input type="text" id="name" class="inputs" placeholder="Your username">
+            <button class="btns" id="name-btn">Enter</button>
+            <button class="btns" id="sign-in-btn">Sign in</button>
+    </form>
+    
+        <!-- greeting message -->
+    <h1 id="greeting-msg">Welcome, Lorem</h1>
+
+        <!-- second form for tasks -->
+    <form action="#" id="container-tasks">
+                <!-- tasks input -->
+            <label id="tasks-label" for="tasks">Enter your task</label>
+            <input type="text" id="tasks-input" class="inputs" placeholder="Your task">
+                    <!-- buttons of tasks -->
+            <div id="btns-box">
+
+                <div id="actions">
+                    <button class="btns" id="add">Add</button>
+                    <button class="btns" id="delete">Delete</button>
+                    <button class="btns" id="select-all">Select all</button>
+                    <button class="btns" id="select-none">Select none</button>
+                </div>
+                
+            </div>
+                        <!-- tasks box -->
+            <div id="tasks-box">
+
+            </div>
+
+        <button id="sign-out" class="btns">Sign out</button>
+    </form>
+
+    </section>
+
+    <footer>
+        @Lorem ipsum dolor sit amet consectetur.
+    </footer>
+</body>
+</html>
